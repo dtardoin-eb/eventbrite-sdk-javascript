@@ -17,3 +17,5 @@ deploy:
   skip_cleanup: true
   script:
     - bash _scripts/deploy_key_decrypt.sh
+    # Tag push goes here 
+    - pkill ssh-agent
